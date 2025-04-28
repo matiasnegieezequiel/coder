@@ -1,0 +1,172 @@
+ 
+ /* menu principal */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  
+    margin: 0;
+ padding: 0;
+   box-sizing: border-box;
+   justify-content: end;
+ }
+
+ header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+   }
+ 
+ 
+  body  {
+    background-color: black;
+    
+  }
+   
+
+  
+   /*  fin del contenido y menu    */
+    /*   pagina de inicio   */
+  
+    img{
+       width:40%;
+      float: inline-end;
+       }
+ .p {
+  max-width: 600px;
+  color: blueviolet;
+  padding: 40px;
+  margin: 50px;
+ 
+}
+
+.caja{
+  display: grid;
+  grid-template-columns: (1,1fr);
+  gap: 10px;
+
+}
+
+ /* fin de pagina de inicio  */
+
+ /* pagina de contacto   */
+ /* pagina de contacto  */
+  .formulario {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #c51616;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(226, 3, 141, 0.1);
+  color: #5e07c2;
+}
+
+.campo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #5e07c2;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #5e07c2;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #f50707c5;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #5e07c2;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+
+ /* fin  pagina de contacto  */
+/* fin de pagina de contacto  */
+
+
+ /*  inicio pagina de galeri  */
+ .gallery {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery-item {
+  flex-basis: calc(20% - 10px); 
+  margin-bottom: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .gallery-item {
+    flex-basis: calc(33.33% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 320px) {
+  .gallery-item {
+    flex-basis: 100%;
+  }
+}
+
+/* redes eh spotify */
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+
+.redes 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+
+}
+
+.redes img{
+   margin: 80px;
+  width: calc(60% - 30px); 
+  height: 150px;
+  object-fit: cover;
+}
+
